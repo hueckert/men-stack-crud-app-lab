@@ -1,0 +1,27 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Car</title>
+  </head>
+  <body>
+    <h1>Add a New Car!</h1>
+    <form action="/cars" method="POST">
+        <label for="year">Year:</label>
+        <input type="text" name="year" id="year" />
+
+        <label for="Make">Make:</label>
+        <input type="text" name="make" id="make" />
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model" />
+
+        <label for="horsepower">Horsepower:</label>
+        <input type="text" name="horsepower" id="horsepower" />
+    
+        <button type="submit">Add Car</button>
+  </body>
+</html>
