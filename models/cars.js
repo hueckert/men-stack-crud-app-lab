@@ -3,17 +3,17 @@
 const mongoose = require("mongoose");
 
 
-const carsSchema = new mongoose.Schema({
-    Year: Number,
-    Make: String,
-    Model: String,
-    Horsepower: Number,
+const carSchema = new mongoose.Schema({
+    year: Number,
+    make: String,
+    model: String,
+    horsepower: Number,
     
   });
   
-  const Cars = mongoose.model("Car", carsSchema); // create model
+  const Car = mongoose.model("Car", carSchema); // create model
 
-  module.exports = Cars;
+  module.exports = Car;
 
 
   
