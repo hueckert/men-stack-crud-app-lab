@@ -1,0 +1,31 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Car</title>
+  </head>
+  <body>
+    <h1>Edit <%= car.year %> <%= car.make %> <%= car.model %> </h1>
+   
+   
+
+    <form action="/cars/<%=car._id%>?_method=PUT" method="POST">
+
+        <label for="year">Year:</label>
+        <input type="number" name="year" value="<%= car.year %>" />
+
+        <label for="make">Make:</label>
+        <input type="text" name="make" value="<%= car.make %>" />
+
+        <label for="model">Model:</label>
+        <input type="text" name="model" value="<%= car.model %>" />
+
+        <label for="horsepower">Horsepower:</label>
+        <input type="text" name="horsepower" value="<%= car.horsepower %>" />
+    
+        <button type="submit">Edit Car</button>
+  </body>
+</html>
